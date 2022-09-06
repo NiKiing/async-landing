@@ -1,0 +1,121 @@
+
+header{
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--Opaque-dark-blue) ;
+    height: 65px;
+    transition: 0.5s;
+    
+}
+
+.sticky{
+    border-bottom: 1px solid var(--Black);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s;
+   
+}
+
+header .nav-header{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+header .nav-header .header--logo {
+    width: 20%;
+    justify-content: center;
+
+}
+
+header .nav-header .header--links {
+    width: 80%;
+    max-width: 1980px;
+    margin-right: 50px;
+    
+}
+
+header .header--links ul{
+    justify-content: flex-end;
+    gap: 70px;
+    margin-right: 24px;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+main .new-hero{
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    justify-items: center;
+    min-width: 768px;
+    width: 80%;
+    margin-bottom: 56px;
+    margin-top: 100px !important; 
+    
+}
+main .new-hero .new-hero--info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20%;
+}
+main .new-hero .new-hero--info .animated-info--title h1{
+    font-size: 5rem;
+    
+}
+main .new-hero .new-hero--info p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+main .new-hero .new-hero--img img:nth-child(1) {
+    display: none;
+}
+
+main .new-hero .new-hero--img img:nth-child(2){
+    display: block;
+    margin-left: 20px;
+}
+
+main .videos-container {
+    width: 80%;
+    min-width: 768px;
+}
+main .videos-container h2 {
+    margin-left: 5.5%;
+    width: 316px;
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+main .last-videos{
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+main .last-videos .videos{
+    overflow-x: hidden;
+}
+main .last-videos .videos .all-videos{
+    grid-template-rows: repeat(3, minmax(90px, 100px));
+    grid-template-columns: repeat(3, 100px);
+    gap: 32px;
+
+   
+}
+
+main .last-videos .last-videos-img img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+main .nsl-slogan h3{
+    font-size: 4rem;
+}
