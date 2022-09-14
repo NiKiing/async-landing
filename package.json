@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/NiKiing/async-landing/issues"
   },
-  "homepage": "https://github.com/NiKiing/async-landing#readme"
+  "homepage": "https://github.com/NiKiing/async-landing#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.10"
+  }
 }

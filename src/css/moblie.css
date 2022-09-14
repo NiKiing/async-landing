@@ -5,3 +5,11 @@ main .new-hero {
 main .last-videos .last-videos-img{
     margin: auto;
 }
+
+main .last-videos .videos .all-videos {
+    height: 240px;
+}
+
+main .last-videos .last-videos-img img{
+    width: 300px;
+}

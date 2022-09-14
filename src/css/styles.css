@@ -120,9 +120,7 @@ main .new-hero .new-hero--info .nsl-hero{
     font-size: 0.8rem;
 
 }
-main .new-hero .new-hero--img{
-    max-width: 425px;
-}
+
 main .new-hero .new-hero--img img {
     width: 100%;
     object-fit: cover;
@@ -130,6 +128,7 @@ main .new-hero .new-hero--img img {
 }
 .new-hero .new-hero--img img:nth-child(2) {
     display: none;
+    width: 600px;
 }
 .videos-container{
     font-family: var(--Principal-font);
@@ -142,19 +141,19 @@ main .new-hero .new-hero--img img {
     margin-left: 12px;
     margin-bottom: 18px;
 }
-main .last-videos{
+
+.last-videos{
     display: grid;
     grid-template-rows: repeat(2, auto);
     justify-content: center;
     gap: 42px;
     margin-bottom: 56px;
 }
-main .last-videos .last-videos-img {
-    max-width: 425px;
-
+main .last-videos .img-tech-n{
+    order: -1;
 }
 .last-videos .last-videos-img img{
-    width: 100%;
+    width: 600px;
     object-fit: contain;
 }
 .last-videos .videos {
@@ -162,7 +161,7 @@ main .last-videos .last-videos-img {
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-
+    overflow-y: hidden;
 }
 
 .last-videos .videos .all-videos{
@@ -170,14 +169,48 @@ main .last-videos .last-videos-img {
     grid-template-columns: repeat(9, 170px);
     grid-template-rows: 1fr;
     margin-left: 20px;
+    gap: 80px;
 }
 
-.last-videos .videos .all-videos div {
-    width: 100px;
-    height: 100px;
-    border-radius: 10%;
-    background-color: var(--Gray);
+.last-videos .videos .all-videos .video-item {
+    width: 200px;
+    height: 150px;
+    border-radius: 2%;
     scroll-snap-align: center;
+    border-radius: 10%;
+}
+
+
+
+
+main .img-container{
+  overflow: hidden;
+}
+main .video-item img{
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+main .last-videos .videos .all-videos .video-item img {
+    border-radius: 10%;
+}
+
+main .last-videos .videos .all-videos .video-item img:hover {
+    transform: scale(1.1);
+
+    
+}
+main .last-videos .videos .all-videos .video-item span{
+    font-family: var(--Principal-font);
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    word-spacing: -1px;
 }
 
 /* Scroll Text */

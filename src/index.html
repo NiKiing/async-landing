@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="(min-width: 768px)" href="./css/desktop.css" />
-    <link rel="stylesheet" media="(min-width: 426px)" href="./css/moblie.css" />
+    <link rel="stylesheet" media="(min-width: 1183px)" href="./css/desktop.css" />
+    <link rel="stylesheet" media="(max-width: 767px)" href="./css/moblie.css" />
+    <link rel="stylesheet" media="(min-width: 768px)" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="//static.platzi.com/media/favicons/platzi_favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -53,38 +55,22 @@
                     <img src="./images/last-vid-platzi.png" alt="Last videos image">
                 </div>
                 <div class="videos">
-                    <div class="all-videos">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div class="all-videos" id="content">
+                       
                     </div>
                 </div>
             </div>
         </section>
         
         <section class="videos-container playlist-container">
-            <h2>Last Youtube Playlist</h2>
+            <h2>Noticias TECH by Platzi</h2>
             <div class="last-videos last-playlist">
                 <div class="videos playlist">
-                    <div class="all-videos all-playlist">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div class="all-videos all-playlist" id="content-p">
+
                     </div>
                 </div>
-                <div class="last-videos-img">
+                <div class="last-videos-img img-tech-n">
                     <img src="./images/img-last-playlist.png" alt="Last videos image">
                 </div>
             </div>
@@ -93,11 +79,11 @@
     <footer class="footer-container">
         <h3>@NiKiing</h3>
         <div class="social-media">
-            <a href="https://twitter.com/nikiing__"><img src="./images/icon-twitter.png" alt="Twitter Logo"></a>
-            <a href="https://github.com/NiKiing"><img src="./images/icon-github.png" alt="GitHub Logo"></a>
+            <a href="https://twitter.com/nikiing__" target="_blank"><img src="./images/icon-twitter.png"  alt="Twitter Logo"></a>
+            <a href="https://github.com/NiKiing" target="_blank"><img src="./images/icon-github.png" alt="GitHub Logo" ></a>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
-    <script src="./assets/main.js"></script>
+    <script defer src="./assets/main.js"></script>
 </body>
 </html>
