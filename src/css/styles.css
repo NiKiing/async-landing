@@ -192,8 +192,8 @@ main .video-item img{
     transition: 1s;
 }
 
-main .last-videos .videos .all-videos .video-item img {
-    border-radius: 10%;
+main .last-videos .videos .all-videos .video-item {
+    background-color: var(--Black);
 }
 
 main .last-videos .videos .all-videos .video-item img:hover {
