@@ -1,0 +1,281 @@
+:root{
+    --Opaque-dark-blue: #172C3F;
+    --Radiant-green: #97c93e;
+    --White: #FFFFFF;
+    --Black: #000000;
+    --Gray: #B7B7B7;
+    --Principal-font: 'Roboto', sans-serif;
+    
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--Opaque-dark-blue);
+}
+
+a {
+    text-decoration: none;
+    color: var(--White);
+    letter-spacing: 1px;
+}
+
+li{
+    list-style-type: none;
+}
+
+header{
+    padding-top: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+header .header--logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header--logo img:first-child {
+    width: 24px;
+}
+header .header--logo img:last-child{
+    width: 51px;
+    margin-left: 1px;
+    font-family: var(--Principal-font);
+}
+
+header .header--links{
+    width: 100%;
+}
+
+.header--links ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+header .header--links ul li a{
+    font-family: var(--Principal-font);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+header .header--links ul li a:hover{
+    color: var(--Radiant-green);
+}
+
+header .header--links .menu-list .home-link a{
+    font-weight: 700;
+    color: var(--Radiant-green);
+}
+
+header .header--links .menu-list .platzi-button a{
+    border: 1px solid var(--Radiant-green);
+    border-radius: 10%;
+    padding: 10px 20px 10px 20px;
+    transition: 0.2s;
+}
+header .header--links .menu-list .platzi-button a:hover{
+   background-color: var(--Radiant-green);
+   transition: 1s;
+   font-weight: 700;
+   color: var(--Black);
+}
+
+
+
+/* MAIN */
+
+main .new-hero{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    margin-top: 28px;
+    
+
+}
+main .new-hero .new-hero--info{
+    font-family: var(--Principal-font);
+    color: var(--White);
+    margin-left: 12px;
+}
+
+main .new-hero .new-hero--info .animated-info--title h1{
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+
+}
+
+main .new-hero .new-hero--info p{
+    margin: 0;
+   margin: 18px 0 12px 0;
+}
+
+main .new-hero .new-hero--info .nsl-hero{
+    color: var(--Gray);
+    font-size: 0.8rem;
+
+}
+
+main .new-hero .new-hero--img img {
+    width: 100%;
+    object-fit: cover;
+    
+}
+.new-hero .new-hero--img img:nth-child(2) {
+    display: none;
+    width: 600px;
+}
+.videos-container{
+    font-family: var(--Principal-font);
+    color: var(--White);
+    margin-top: 24px;
+}
+.videos-container  h2{
+    margin: 0;
+    font-size: 1.2rem;
+    margin-left: 12px;
+    margin-bottom: 18px;
+}
+
+.last-videos{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    gap: 42px;
+    margin-bottom: 56px;
+}
+main .last-videos .img-tech-n{
+    order: -1;
+}
+.last-videos .last-videos-img img{
+    width: 600px;
+    object-fit: contain;
+}
+.last-videos .videos {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    overflow-y: hidden;
+}
+
+.last-videos .videos .all-videos{
+    display: grid;
+    grid-template-columns: repeat(9, 170px);
+    grid-template-rows: 1fr;
+    margin-left: 20px;
+    gap: 80px;
+}
+
+.last-videos .videos .all-videos .video-item {
+    width: 200px;
+    height: 150px;
+    border-radius: 2%;
+    scroll-snap-align: center;
+    border-radius: 10%;
+}
+
+
+
+
+main .img-container{
+  overflow: hidden;
+}
+main .video-item img{
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+main .last-videos .videos .all-videos .video-item {
+    background-color: var(--Black);
+}
+
+main .last-videos .videos .all-videos .video-item img:hover {
+    transform: scale(1.1);
+
+    
+}
+main .last-videos .videos .all-videos .video-item span{
+    font-family: var(--Principal-font);
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    word-spacing: -1px;
+}
+
+/* Scroll Text */
+
+main .nsl-slogan{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("../images/never-stop-learning.PNG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+    position: block;
+    opacity: 1;
+    
+
+}
+
+.nsl-slogan h3{
+    margin: 0;
+    padding: 0;
+    font-family: var(--Principal-font);
+    position: relative;
+    color: var(--White);
+    white-space: nowrap;
+    font-size: 2rem;
+    left: 300px;
+    height: 40px;
+    transition: 0.9s;
+    z-index: 1;
+    text-align: center;
+    color: var(--White);
+   
+}
+
+main .playlist-container  h2{
+    margin-bottom: 24px;
+}
+
+/* Footer */
+
+.footer-container {
+    height: 200px;
+    background-color: #13203e;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-container h3 {
+    
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: var(--Principal-font);
+    color: var(--White);
+}
+.footer-container .social-media a {
+    padding-left: 16px;
+}
+.footer-container .social-media a img{
+    width: 40px;
+    
+    
+}

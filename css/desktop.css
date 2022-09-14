@@ -1,0 +1,10 @@
+
+main .last-videos{
+    
+    grid-template-columns: 50% 50%;
+}
+
+
+main .last-videos .last-videos-img img{
+    max-width: 600px !important;
+}
